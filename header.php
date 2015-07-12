@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Pop! Blog</title>
+		<title><?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?></title>
 		<link 	rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 		<link rel='stylesheet' href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/material.deep_orange-light_green.min.css"></link>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -22,7 +22,8 @@
 				<div class="mdl-layout--large-screen-only mdl-layout__header-row">
 				</div>
 				<div class="mdl-layout__header-row">
-				  <h3>POP! BLOG</h3>
+				  <h3><?php bloginfo( 'name' ); ?></h3>&nbsp&nbsp
+				  <h4><?php bloginfo( 'description' ); ?></h4>
 				</div>
 				<div class="mdl-layout--large-screen-only mdl-layout__header-row">
 				</div>
@@ -38,7 +39,7 @@
 				</div>
 			</header>
 			<div class="mdl-layout__drawer">
-			<span class="mdl-layout-title">POP! BLOG</span>
+			<span class="mdl-layout-title"><?php bloginfo( 'name' ); ?></span>
 				<nav class="mdl-navigation">
 				  <a href="#overview" class="mdl-navigation__link">Overview</a>
 				  <a href="#features" class="mdl-navigation__link">Features</a>
